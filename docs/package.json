@@ -1,7 +1,7 @@
 {
   "name": "modern-ojs-landing",
   "version": "1.0.0",
-  "description": "Landing page for Modern Open Journal Systems",
+  "description": "Landing page and Documentation for Modern Open Journal Systems",
   "type": "module",
   "main": "index.html",
   "engines": {
@@ -11,7 +11,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "keywords": [
     "ojs",
@@ -22,7 +25,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vitepress": "^1.0.0-rc.44"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
